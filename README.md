@@ -2,6 +2,9 @@
 ----------
 
 ## Introduction
+Skeleton Storm project for Fifth Elephant workshop on [Big Data, Real-time Processing and Storm](https://funnel.hasgeek.com/fifthel2013/652-big-data-real-time-processing-and-storm).<br>
+This will be a live-coding session where you will learn how to use Storm. This workshop is for software developers with some background in Java programming who are interested in distributed data processing.
+
 This repository contains an application for demonstrating Storm distributed framework by counting the words present in random sentences fed by the code [in the Spout] in real-time. This project does not need internet access while executing the topology i.e. once configured and Maven downloads all the required dependencies. Please check my other repo, [StormTweetsWordCount] (https://github.com/P7h/StormTweetsWordCount) for counting words in tweets which needs internet access.
 
 [Storm](http://storm-project.net) is a free and open source distributed real-time computation system, developed at BackType by Nathan Marz and team. It has been open sourced by Twitter [post BackType acquisition] in August, 2011.<br>
@@ -18,7 +21,7 @@ This application uses and complements Nathan Marz's [storm starter](https://gith
 * Application receives random sentences from Spout.<br>
 * It splits each sentence with space as the delimiter and counts frequency of the words present in sentences.<br>
 * Every 5 seconds, during processing, the application logs the word and its count to the console and also to a log file. <br>
-* In local mode, topology runs for 2 minutes and then shuts down. Topology run can be updated by modifying [this](src/main/java/org/p7h/storm/offline/wordcount/topology/WordCountTopology.java#L48) value.<br>
+* In local mode, topology runs for 2 minutes and then shuts down. Topology time duration can be updated by modifying [this](src/main/java/org/p7h/storm/offline/wordcount/topology/WordCountTopology.java#L48) value.<br>
 * Also this project has been made compatible with both Eclipse IDE and IntelliJ IDEA. Import the project in your favorite IDE [which has Maven plugin installed] and you can quickly follow the code.
 * As of today, this codebase has almost no or very less comments.
 
