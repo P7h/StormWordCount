@@ -2,10 +2,10 @@
 ----------
 
 ## Introduction
-Skeleton Storm project for Fifth Elephant workshop on [Big Data, Real-time Processing and Storm](https://funnel.hasgeek.com/fifthel2013/652-big-data-real-time-processing-and-storm).<br>
+Skeleton Storm project for [The Fifth Elephant, 2013](https://fifthelephant.in/2013) workshop on [Big Data, Real-time Processing and Storm](https://fifthelephant.in/2013/workshops) on 11th July, 2013 at NIMHANS Convention Centre, Bangalore.<br>
 This will be a live-coding session where you will learn how to use Storm. This workshop is for software developers with some background in Java programming who are interested in distributed data processing.
 
-This repository contains an application for demonstrating Storm distributed framework by counting the words present in random sentences fed by the code [in the Spout] in real-time. This project does not need internet access while executing the topology i.e. once configured and Maven downloads all the required dependencies. Please check my other repo, [StormTweetsWordCount] (https://github.com/P7h/StormTweetsWordCount) for counting words in tweets which needs internet access.
+This repository contains an application for demonstrating Storm distributed framework by counting the words present in random sentences fed by the code [in the Spout] in real-time.<br>This project does not need internet access while executing the topology i.e. once configured and Maven downloads all the required dependencies. Please check my other repo, [StormTweetsWordCount](https://github.com/P7h/StormTweetsWordCount) for counting words in tweets which also needs internet access for getting data from Twitter.
 
 [Storm](http://storm-project.net) is a free and open source distributed real-time computation system, developed at BackType by Nathan Marz and team. It has been open sourced by Twitter [post BackType acquisition] in August, 2011.<br>
 This application has been developed and tested with Storm v0.8.2 on Windows 7 in local mode. Application may or may not work with earlier or later versions than Storm v0.8.2.<br>
