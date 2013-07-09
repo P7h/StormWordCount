@@ -12,7 +12,7 @@ This application has been developed and tested with Storm v0.8.2 on Windows 7 in
 
 This application has been tested in:<br>
 
-+ Local mode on a CentOS virtual machine and even on Microsoft Windows 7 machine.
++ Local mode on a CentOS machine and even on Microsoft Windows 7 machine.
 + Cluster mode on a private cluster and also on Amazon EC2 environment of 4 machines and 5 machines respectively; with all the machines in private cluster running Ubuntu while EC2 environment machines were powered by CentOS.
 
 This application uses and complements Nathan Marz's [storm starter](https://github.com/nathanmarz/storm-starter) Project.
@@ -57,7 +57,7 @@ In local mode, this application can be run from command line by invoking:<br>
 
 or
 
-    mvn clean compile package && java -jar target/storm-wordcount-1.0-SNAPSHOT-jar-with-dependencies.jar
+    mvn clean compile package && java -jar target/storm-wordcount-1.0-SNAPSHOT.jar
 	
 ### Distributed [or Cluster / Production] Mode:
 Distributed mode requires a complete and proper Storm Cluster setup. Please refer this [wiki](https://github.com/nathanmarz/storm/wiki/Setting-up-a-Storm-cluster) for setting up a Storm Cluster.<br>
