@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="CompilerConfiguration">
-    <option name="DEFAULT_COMPILER" value="Javac" />
+    <option name="DEFAULT_COMPILER" value="Eclipse" />
     <resourceExtensions />
     <wildcardResourcePatterns>
       <entry name="!?*.java" />
@@ -22,12 +22,11 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <processorPath useClasspath="true" />
-        <module name="StormWordCount" />
+        <module name="storm-wordcount" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="StormWordCount" target="1.7" />
+      <module name="storm-wordcount" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>
-

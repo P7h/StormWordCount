@@ -7,14 +7,8 @@ import backtype.storm.tuple.Fields;
 import backtype.storm.tuple.Tuple;
 import backtype.storm.tuple.Values;
 
-/**
- * Created with IntelliJ IDEA.
- * User: 078831
- * Date: 7/5/13
- * Time: 12:45 AM
- * To change this template use File | Settings | File Templates.
- */
 public final class SplitSentenceBolt extends BaseBasicBolt {
+
 	private static final long serialVersionUID = 3077170245322026396L;
 
 	@Override

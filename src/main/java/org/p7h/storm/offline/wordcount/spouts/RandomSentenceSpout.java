@@ -1,8 +1,5 @@
 package org.p7h.storm.offline.wordcount.spouts;
 
-import java.util.Map;
-import java.util.Random;
-
 import backtype.storm.spout.SpoutOutputCollector;
 import backtype.storm.task.TopologyContext;
 import backtype.storm.topology.OutputFieldsDeclarer;
@@ -11,9 +8,12 @@ import backtype.storm.tuple.Fields;
 import backtype.storm.tuple.Values;
 import backtype.storm.utils.Utils;
 
+import java.util.Map;
+import java.util.Random;
+
 public final class RandomSentenceSpout extends BaseRichSpout {
-	private static final long serialVersionUID = 25305908319060934L;
-	private SpoutOutputCollector _collector;
+    private static final long serialVersionUID = -3830075232094686690L;
+    private SpoutOutputCollector _collector;
 	private Random _rand;
 
 	@Override

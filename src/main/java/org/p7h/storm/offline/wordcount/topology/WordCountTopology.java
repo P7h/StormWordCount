@@ -15,7 +15,7 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 /**
- * Orchestrates the elements and forms a Topology to count the words present in Tweets.
+ * Orchestrates the elements and forms a Topology to count the words present in random sentences.
  *
  * @author - Prashanth Babu
  */
@@ -44,7 +44,7 @@ public final class WordCountTopology {
 				config.setMaxTaskParallelism(10);
 				final LocalCluster localCluster = new LocalCluster();
 				localCluster.submitTopology(TOPOLOGY_NAME, config, topologyBuilder.createTopology());
-				//Run this topology for 120 seconds so that we can complete processing of decent # of tweets.
+				//Run this topology for 120 seconds so that we can complete processing of decent # of listings.
 				Utils.sleep(120 * 1000);
 
 				LOGGER.info("Shutting down the cluster...");
