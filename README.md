@@ -1,7 +1,7 @@
 # StormWordCount
 ----------
 
-###<u>Note</u>: Updated to latest available `Storm` v0.9.3 on 28th December, 2014. Storm package structure is a bit different now as it is a [TLP in Apache](https://blogs.apache.org/foundation/entry/the_apache_software_foundation_announces64) eff 29th Sep, 2014.
+###<u>Note</u>: Updated to latest available `Storm` version i.e. v0.9.3 on 28th December, 2014. Storm package structure is a bit different now as it is a [TLP in Apache](https://blogs.apache.org/foundation/entry/the_apache_software_foundation_announces64) eff. 29th Sep, 2014.
 
 ## Introduction
 Skeleton Storm project for [The Fifth Elephant, 2013](https://fifthelephant.in/2013) workshop on [Big Data, Real-time Processing and Storm](https://fifthelephant.in/2013/workshops) on 11th July, 2013 at NIMHANS Convention Centre, Bangalore.<br>
@@ -9,8 +9,8 @@ This will be a live-coding session where you will learn how to use Storm. This w
 
 This repository contains an application for demonstrating Storm distributed framework by counting the words present in random sentences fed by the code [in the Spout] in real-time.<br>This project does not need internet access while executing the topology i.e. once configured and Maven downloads all the required dependencies. Please check my other repo, [StormTweetsWordCount](https://github.com/P7h/StormTweetsWordCount) for counting words in tweets which *needs* internet access for getting data from Twitter.
 
-[Storm](http://storm.apache.org) is a free and open source distributed real-time computation system, developed at BackType by Nathan Marz and team. It has been open sourced by Twitter [post BackType acquisition] in August, 2011.<br>
-This application has been developed and tested with Storm v0.8.2 on Windows 7 in local mode. Application may or may not work with earlier or later versions than Storm v0.8.2 and was eventually updated and tested with Storm v0.9.3 on 28th December, 2014. <br>
+[Apache Storm](http://storm.apache.org) is a free and open source distributed real-time computation system, developed at BackType by Nathan Marz and team. It has been open sourced by Twitter [post BackType acquisition] in August, 2011.<br>
+This application has been developed and tested initially with Storm v0.8.2 on Windows 7 in local mode; and was eventually updated and tested with Storm v0.9.3 on 28th December, 2014. Application may or may not work with earlier or later versions than Storm v0.9.3.<br>
 
 This application has been tested in:<br>
 
@@ -61,10 +61,12 @@ or
     mvn clean compile package && java -jar target/storm-wordcount-1.0-SNAPSHOT-jar-with-dependencies.jar
 	
 ### Distributed [or Cluster / Production] Mode:
-Distributed mode requires a complete and proper Storm Cluster setup. Please refer this [wiki](https://github.com/nathanmarz/storm/wiki/Setting-up-a-Storm-cluster) for setting up a Storm Cluster.<br>
+Distributed mode requires a complete and proper Storm Cluster setup. Please refer this [wiki page on Apache Storm website](http://storm.apache.org/documentation/Setting-up-a-Storm-cluster.html) for setting up a Storm Cluster.<br>
 In distributed mode, after starting Nimbus and Supervisors on individual machines, this application can be executed on the master [or Nimbus] machine by invoking the following on the command line:
 
     storm jar target/storm-wordcount-1.0-SNAPSHOT.jar org.p7h.storm.offline.wordcount.topology.WordCountTopology WordCount
+
+> Note: Repo's recent updation to Storm v0.9.3 was not tested in Cluster mode. But it should work as before [i.e. earlier versions of Storm], if the cluster setup is all fine.
 
 ## Problems
 If you find any issues, please report them either raising an [issue](https://github.com/P7h/StormWordCount/issues) here on Github or alert me on my Twitter handle [@P7h](http://twitter.com/P7h). Or even better, please send a [pull request](https://github.com/P7h/StormWordCount/pulls).
