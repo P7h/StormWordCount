@@ -1,15 +1,13 @@
 # StormWordCount
 ----------
 
-###<u>Note</u>: Updated to latest available `Apache Storm` version i.e. v0.9.3 on 28<sup>th</sup> December, 2014. Storm package structure is a bit different now as it is a [TLP in Apache](https://blogs.apache.org/foundation/entry/the_apache_software_foundation_announces64) eff. 29<sup>th</sup> September, 2014.
-
 ## Introduction
 Skeleton Storm project for [The Fifth Elephant, 2013](https://fifthelephant.in/2013) workshop on [Big Data, Real-time Processing and Storm](https://fifthelephant.in/2013/workshops) on 11<sup>th</sup> July, 2013 at NIMHANS Convention Centre, Bangalore.<br>
 This will be a live-coding session where you will learn how to use Apache Storm. This workshop is for software developers with some background in Java programming who are interested in distributed data processing and more so real-time stream processing.
 
 This repository contains an application for demonstrating Apache Storm distributed framework by counting the words present in random sentences fed by Storm Pipeline code [in Storm terminology: Spout] in real-time.<br>This project does not need internet access while executing the topology i.e. once the project is configured and Maven downloads all the required dependencies. Please check my other repo, [StormTweetsWordCount](https://github.com/P7h/StormTweetsWordCount) for counting words in tweets in real-time which *needs* internet access for getting data from Twitter.
 
-[Apache Storm](http://storm.apache.org) is an open source distributed real-time computation system, developed at BackType by Nathan Marz and team. It has been open sourced by Twitter [post BackType acquisition] in August, 2011. And became a top level project in Apache on 29<sup>th</sup> September, 2014.<br>
+[Apache Storm](http://storm.apache.org) is an open source distributed real-time computation system, developed at BackType by Nathan Marz and team. It has been open sourced by Twitter [post BackType acquisition] in August, 2011. And Storm became a [top level project in Apache](https://blogs.apache.org/foundation/entry/the_apache_software_foundation_announces64) on 29<sup>th</sup> September, 2014.<br>
 This application has been developed and tested initially with Storm v0.8.2 on Windows 7 in local mode; and was eventually updated and tested with Storm v0.9.3 on 28<sup>th</sup> December, 2014. Application may or may not work with earlier or later versions than Storm v0.9.3.<br>
 
 This application has been tested in:<br>
